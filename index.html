@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Courgette|Permanent+Marker" rel="stylesheet">
+    <script src="./assets/javascript/game.js" type="text/javascript"></script>
+    <title>CrystalsCollector Game</title>
+</head>
+
+<body>
+    <h1>CrystalsCollector!</h1>
+    <div class="inst">
+        <p>How to Play: </p>
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific
+            amount of points to your total score.</p>
+        <P>You win the game by matching your total score to random number, you lose the
+            game if your total score goes above the random number.
+        </P>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal</p>
+    </div>
+
+    <div class="randomNum">
+        <p style="font-size: 14px; text-align: left">Goal:</p>
+        <p><span id="rand"></span></p>
+    </div>
+    <div class="score">
+        <p>Wins: <span id="wins"></span></p>
+        <p>Losses: <span id="lose"></span></p>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-outline-info"><img src="./assets/images/red.png" id="red" width="100px"></button>
+                <button type="button" class="btn btn-outline-info"><img src="./assets/images/blue.png" id="blue" width="100px"></button>
+                <button type="button" class="btn btn-outline-info"><img src="./assets/images/yellow.png" id="yellow" width="100px"></button>
+                <button type="button" class="btn btn-outline-info"><img src="./assets/images/green.png" id="green" width="100px"></button>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="your">
+        <P>Your total score is:</P>
+    </div>
+    <div class="total">
+        <span id="total"></span>
+    </div>
+
+</body>
+
+</html>
